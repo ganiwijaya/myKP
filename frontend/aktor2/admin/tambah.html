@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tambah Jadwal Ujian</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+	
+</head>
+
+<body class="bg-light">
+    
+    <div class="row" style="margin-top: 1%">
+        <div class="col-md-12 col-lg-12">
+            <div class="col-md-12 col-lg-12 mb-3">
+                <a href="./akun.html" class="btn btn-primary"><i class="fa fa-chevron-left" aria-hidden="true"></i> Kembali</a>
+            </div>
+            <div class="col-md-12 col-lg-12">
+                <div class="row">
+                    <div class="col-md-8 col-lg-8">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-6">
+                                        <div class="container">
+                                            <center><h6 class="text-muted">Informasi Ujian</h6></center>
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="formGroupExampleInput">Nama Ujian</label>
+                                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nama ujian">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleFormDateSelect">Tanggal</label>
+                                                    <input id="datepicker"/>
+                                                    <script>
+                                                        $('#datepicker').datepicker({
+                                                            uiLibrary: 'bootstrap4'
+                                                        });
+                                                    </script>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6">
+                                        <div class="container">
+                                            <center><h6 class="text-muted">Kategori</h6></center>
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="formGroupExampleInput">Umum</label>
+                                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Jumlah soal">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="formGroupExampleInput">IPA</label>
+                                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Jumlah soal">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="formGroupExampleInput">IPS</label>
+                                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Jumlah soal">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <center><h6 class="text-muted">Tambahkan Peserta</h6></center>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlFile1">Tambahkan berkas</label>
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="card-footer">
+                                <a href="./akun.html" class="btn btn-success float-right"><i class="fa fa-plus" aria-hidden="true"></i> Buat Jadwal</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Menyisipkan JQuery dan Javascript Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
